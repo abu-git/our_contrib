@@ -1,0 +1,23 @@
+/* Utilities */
+.container{
+    max-width: 1100px;
+    margin: 0 auto; /* top and bottom 0 and auto for left and right */
+    overflow: auto; /* removes space created by h1 margin top */
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

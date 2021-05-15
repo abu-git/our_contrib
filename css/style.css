@@ -1,0 +1,119 @@
+/* Fredoka from Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+
+/* reset elements */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'IBM Plex Mono', monospace;
+    color: black;
+    line-height: 1.6;
+    background-color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 10px;
+    margin: 10px 0;
+}
+
+
+
+/* Navbar */
+.navbar{
+    background-color: white;
+    color: black;
+    height: 60px;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
+
+.navbar a{
+    color: black;
+    padding: 10px;
+    margin: 0 5px; /* top and bottom 0 and 5px left and right */
+}
+
+.navbar a:hover{
+    border-bottom: 2px yellow solid;
+}
+
+/* Showcase */
+.showcase{
+    height: 500px;
+    position: relative;
+}
+
+.showcase h1{
+    font-size: 4rem;
+    line-height: 60px;
+}
+
+.showcase .grid{
+    overflow: visible;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+
+.showcase-text{
+    margin-top: 40px;
+    align-self: center;
+}
+
+.showcase-image{
+    justify-self: center;
+}
+
+
+/* Tablets and under */
+@media(max-width: 768px){
+    .grid,
+    .showcase .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase{
+        height: auto;
+    }
+}
+
+/* Mobile */
+@media(max-width: 500px){
+    .navbar{
+        height: 110px;
+        padding: 10px;
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+    }
+
+    .navbar ul{
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a:hover{
+        background-color: rgba(129, 129, 114, 0.1);
+    }
+}
